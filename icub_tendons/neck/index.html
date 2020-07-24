@@ -1,0 +1,1233 @@
+
+
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="Documentation resources for the iCub & R1 robots">
+      
+      
+      
+        <meta name="author" content="iCub Tech">
+      
+      <link rel="shortcut icon" href="../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.1.2, mkdocs-material-5.5.0">
+    
+    
+      
+        <title>Neck - iCub Tech Docs</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/main.b5d04df8.min.css">
+      
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.9ab2c1f8.min.css">
+      
+      
+    
+    
+    
+      
+        <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,700%7CRoboto+Mono&display=fallback">
+        <style>body,input{font-family:"Roboto",-apple-system,BlinkMacSystemFont,Helvetica,Arial,sans-serif}code,kbd,pre{font-family:"Roboto Mono",SFMono-Regular,Consolas,Menlo,monospace}</style>
+      
+    
+    
+    
+    
+      
+    
+    
+  </head>
+  
+  
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="" data-md-color-primary="" data-md-color-accent="amber">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#neck-v2" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+      <header class="md-header" data-md-component="header">
+  <nav class="md-header-nav md-grid" aria-label="Header">
+    <a href="../.." title="iCub Tech Docs" class="md-header-nav__button md-logo" aria-label="iCub Tech Docs">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 2a2 2 0 012 2c0 .74-.4 1.39-1 1.73V7h1a7 7 0 017 7h1a1 1 0 011 1v3a1 1 0 01-1 1h-1v1a2 2 0 01-2 2H5a2 2 0 01-2-2v-1H2a1 1 0 01-1-1v-3a1 1 0 011-1h1a7 7 0 017-7h1V5.73c-.6-.34-1-.99-1-1.73a2 2 0 012-2M7.5 13A2.5 2.5 0 005 15.5 2.5 2.5 0 007.5 18a2.5 2.5 0 002.5-2.5A2.5 2.5 0 007.5 13m9 0a2.5 2.5 0 00-2.5 2.5 2.5 2.5 0 002.5 2.5 2.5 2.5 0 002.5-2.5 2.5 2.5 0 00-2.5-2.5z"/></svg>
+
+    </a>
+    <label class="md-header-nav__button md-icon" for="__drawer">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2z"/></svg>
+    </label>
+    <div class="md-header-nav__title" data-md-component="header-title">
+      
+        <div class="md-header-nav__ellipsis">
+          <span class="md-header-nav__topic md-ellipsis">
+            iCub Tech Docs
+          </span>
+          <span class="md-header-nav__topic md-ellipsis">
+            
+              Neck
+            
+          </span>
+        </div>
+      
+    </div>
+    
+      <label class="md-header-nav__button md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0116 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 019.5 16 6.5 6.5 0 013 9.5 6.5 6.5 0 019.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5z"/></svg>
+      </label>
+      
+<div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" data-md-state="active">
+      <label class="md-search__icon md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0116 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 019.5 16 6.5 6.5 0 013 9.5 6.5 6.5 0 019.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5z"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+      </label>
+      <button type="reset" class="md-search__icon md-icon" aria-label="Clear" data-md-component="search-reset" tabindex="-1">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41z"/></svg>
+      </button>
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+      <div class="md-header-nav__source">
+        
+<a href="https://github.com/icub-tech-iit/documentation/" title="Go to repository" class="md-source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M439.55 236.05L244 40.45a28.87 28.87 0 00-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 01-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 000 40.81l195.61 195.6a28.86 28.86 0 0040.8 0l194.69-194.69a28.86 28.86 0 000-40.81z"/></svg>
+  </div>
+  <div class="md-source__repository">
+    icub-tech-iit/documentation
+  </div>
+</a>
+      </div>
+    
+  </nav>
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+        
+      
+      
+        
+          
+
+  
+
+<nav class="md-tabs md-tabs--active" aria-label="Tabs" data-md-component="tabs">
+  <div class="md-tabs__inner md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+    <li class="md-tabs__item">
+      
+        <a href="../.." class="md-tabs__link md-tabs__link--active">
+          iCub Tech Docs
+        </a>
+      
+    </li>
+  
+
+      
+    </ul>
+  </div>
+</nav>
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              <div class="md-sidebar md-sidebar--primary" data-md-component="navigation">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    <nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../.." title="iCub Tech Docs" class="md-nav__button md-logo" aria-label="iCub Tech Docs">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 2a2 2 0 012 2c0 .74-.4 1.39-1 1.73V7h1a7 7 0 017 7h1a1 1 0 011 1v3a1 1 0 01-1 1h-1v1a2 2 0 01-2 2H5a2 2 0 01-2-2v-1H2a1 1 0 01-1-1v-3a1 1 0 011-1h1a7 7 0 017-7h1V5.73c-.6-.34-1-.99-1-1.73a2 2 0 012-2M7.5 13A2.5 2.5 0 005 15.5 2.5 2.5 0 007.5 18a2.5 2.5 0 002.5-2.5A2.5 2.5 0 007.5 13m9 0a2.5 2.5 0 00-2.5 2.5 2.5 2.5 0 002.5 2.5 2.5 2.5 0 002.5-2.5 2.5 2.5 0 00-2.5-2.5z"/></svg>
+
+    </a>
+    iCub Tech Docs
+  </label>
+  
+    <div class="md-nav__source">
+      
+<a href="https://github.com/icub-tech-iit/documentation/" title="Go to repository" class="md-source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M439.55 236.05L244 40.45a28.87 28.87 0 00-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 01-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 000 40.81l195.61 195.6a28.86 28.86 0 0040.8 0l194.69-194.69a28.86 28.86 0 000-40.81z"/></svg>
+  </div>
+  <div class="md-source__repository">
+    icub-tech-iit/documentation
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+      
+
+  
+
+
+  <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+    
+      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-1" type="checkbox" id="nav-1" checked>
+    
+    <label class="md-nav__link" for="nav-1">
+      iCub Tech Docs
+      <span class="md-nav__icon md-icon">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M8.59 16.58L13.17 12 8.59 7.41 10 6l6 6-6 6-1.41-1.42z"/></svg>
+      </span>
+    </label>
+    <nav class="md-nav" aria-label="iCub Tech Docs" data-md-level="1">
+      <label class="md-nav__title" for="nav-1">
+        <span class="md-nav__icon md-icon">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+        </span>
+        iCub Tech Docs
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../.." title="Home Page" class="md-nav__link">
+      Home Page
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+  
+
+
+  <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+    
+      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-1-2" type="checkbox" id="nav-1-2" checked>
+    
+    <label class="md-nav__link" for="nav-1-2">
+      iCub
+      <span class="md-nav__icon md-icon">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M8.59 16.58L13.17 12 8.59 7.41 10 6l6 6-6 6-1.41-1.42z"/></svg>
+      </span>
+    </label>
+    <nav class="md-nav" aria-label="iCub" data-md-level="2">
+      <label class="md-nav__title" for="nav-1-2">
+        <span class="md-nav__icon md-icon">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+        </span>
+        iCub
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../icub/" title="Summary" class="md-nav__link">
+      Summary
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-1-2-2" type="checkbox" id="nav-1-2-2">
+    
+    <label class="md-nav__link" for="nav-1-2-2">
+      The iCub Versions Table
+      <span class="md-nav__icon md-icon">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M8.59 16.58L13.17 12 8.59 7.41 10 6l6 6-6 6-1.41-1.42z"/></svg>
+      </span>
+    </label>
+    <nav class="md-nav" aria-label="The iCub Versions Table" data-md-level="3">
+      <label class="md-nav__title" for="nav-1-2-2">
+        <span class="md-nav__icon md-icon">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+        </span>
+        The iCub Versions Table
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../icub_versions/" title="Versions Table" class="md-nav__link">
+      Versions Table
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+          
+          
+          
+
+  
+
+
+  <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+    
+      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-1-2-3" type="checkbox" id="nav-1-2-3" checked>
+    
+    <label class="md-nav__link" for="nav-1-2-3">
+      The iCub cabling manual
+      <span class="md-nav__icon md-icon">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M8.59 16.58L13.17 12 8.59 7.41 10 6l6 6-6 6-1.41-1.42z"/></svg>
+      </span>
+    </label>
+    <nav class="md-nav" aria-label="The iCub cabling manual" data-md-level="3">
+      <label class="md-nav__title" for="nav-1-2-3">
+        <span class="md-nav__icon md-icon">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+        </span>
+        The iCub cabling manual
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../" title="Summary" class="md-nav__link">
+      Summary
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+  
+
+
+  <li class="md-nav__item md-nav__item--active">
+    
+    <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+    
+      
+    
+    
+      <label class="md-nav__link md-nav__link--active" for="__toc">
+        Neck
+        <span class="md-nav__icon md-icon">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 9h14V7H3v2m0 4h14v-2H3v2m0 4h14v-2H3v2m16 0h2v-2h-2v2m0-10v2h2V7h-2m0 6h2v-2h-2v2z"/></svg>
+        </span>
+      </label>
+    
+    <a href="./" title="Neck" class="md-nav__link md-nav__link--active">
+      Neck
+    </a>
+    
+      
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+      </span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#1-mechanical-assembly-of-the-2-tendons" class="md-nav__link">
+    1    Mechanical assembly of the 2 tendons:
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2-mounting-procedure" class="md-nav__link">
+    2    Mounting Procedure
+  </a>
+  
+    <nav class="md-nav" aria-label="2    Mounting Procedure">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#21-block-version-identification" class="md-nav__link">
+    2.1 Block version identification
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#22-rules-of-thumb-rot-for-a-perfect-start" class="md-nav__link">
+    2.2 Rules of Thumb (RoT) for a Perfect START:
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#23-route-cable-a" class="md-nav__link">
+    2.3 Route Cable ”A”
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#24-route-cable-b" class="md-nav__link">
+    2.4 Route Cable “B”
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#25-final-tensioning" class="md-nav__link">
+    2.5 Final Tensioning
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+    
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../shoulder_elbow/" title="Shoulder and Elbow" class="md-nav__link">
+      Shoulder and Elbow
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-1-2-3-4" type="checkbox" id="nav-1-2-3-4">
+    
+    <label class="md-nav__link" for="nav-1-2-3-4">
+      Lower Arm
+      <span class="md-nav__icon md-icon">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M8.59 16.58L13.17 12 8.59 7.41 10 6l6 6-6 6-1.41-1.42z"/></svg>
+      </span>
+    </label>
+    <nav class="md-nav" aria-label="Lower Arm" data-md-level="4">
+      <label class="md-nav__title" for="nav-1-2-3-4">
+        <span class="md-nav__icon md-icon">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+        </span>
+        Lower Arm
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../lower_arm/" title="Definition" class="md-nav__link">
+      Definition
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-1-2-3-4-2" type="checkbox" id="nav-1-2-3-4-2">
+    
+    <label class="md-nav__link" for="nav-1-2-3-4-2">
+      Version 1
+      <span class="md-nav__icon md-icon">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M8.59 16.58L13.17 12 8.59 7.41 10 6l6 6-6 6-1.41-1.42z"/></svg>
+      </span>
+    </label>
+    <nav class="md-nav" aria-label="Version 1" data-md-level="5">
+      <label class="md-nav__title" for="nav-1-2-3-4-2">
+        <span class="md-nav__icon md-icon">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+        </span>
+        Version 1
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-1-2-3-4-2-1" type="checkbox" id="nav-1-2-3-4-2-1">
+    
+    <label class="md-nav__link" for="nav-1-2-3-4-2-1">
+      Building Phase
+      <span class="md-nav__icon md-icon">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M8.59 16.58L13.17 12 8.59 7.41 10 6l6 6-6 6-1.41-1.42z"/></svg>
+      </span>
+    </label>
+    <nav class="md-nav" aria-label="Building Phase" data-md-level="6">
+      <label class="md-nav__title" for="nav-1-2-3-4-2-1">
+        <span class="md-nav__icon md-icon">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+        </span>
+        Building Phase
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../hand_cabling_V1/" title="HOWTO CABLE & NEEDED PARTS V1" class="md-nav__link">
+      HOWTO CABLE & NEEDED PARTS V1
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-1-2-3-4-2-2" type="checkbox" id="nav-1-2-3-4-2-2">
+    
+    <label class="md-nav__link" for="nav-1-2-3-4-2-2">
+      Repair Phase
+      <span class="md-nav__icon md-icon">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M8.59 16.58L13.17 12 8.59 7.41 10 6l6 6-6 6-1.41-1.42z"/></svg>
+      </span>
+    </label>
+    <nav class="md-nav" aria-label="Repair Phase" data-md-level="6">
+      <label class="md-nav__title" for="nav-1-2-3-4-2-2">
+        <span class="md-nav__icon md-icon">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+        </span>
+        Repair Phase
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../remove/" title="Disconnection V1" class="md-nav__link">
+      Disconnection V1
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../lower_arm_V1/" title="Lower Arm V1" class="md-nav__link">
+      Lower Arm V1
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../wrist_cabling/" title="Wrist & Hand Cabling V1" class="md-nav__link">
+      Wrist & Hand Cabling V1
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-1-2-3-4-3" type="checkbox" id="nav-1-2-3-4-3">
+    
+    <label class="md-nav__link" for="nav-1-2-3-4-3">
+      Version 2
+      <span class="md-nav__icon md-icon">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M8.59 16.58L13.17 12 8.59 7.41 10 6l6 6-6 6-1.41-1.42z"/></svg>
+      </span>
+    </label>
+    <nav class="md-nav" aria-label="Version 2" data-md-level="5">
+      <label class="md-nav__title" for="nav-1-2-3-4-3">
+        <span class="md-nav__icon md-icon">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+        </span>
+        Version 2
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-1-2-3-4-3-1" type="checkbox" id="nav-1-2-3-4-3-1">
+    
+    <label class="md-nav__link" for="nav-1-2-3-4-3-1">
+      Building Phase
+      <span class="md-nav__icon md-icon">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M8.59 16.58L13.17 12 8.59 7.41 10 6l6 6-6 6-1.41-1.42z"/></svg>
+      </span>
+    </label>
+    <nav class="md-nav" aria-label="Building Phase" data-md-level="6">
+      <label class="md-nav__title" for="nav-1-2-3-4-3-1">
+        <span class="md-nav__icon md-icon">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+        </span>
+        Building Phase
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../cabling_V2/" title="HOWTO CABLE & NEEDED PARTS V2" class="md-nav__link">
+      HOWTO CABLE & NEEDED PARTS V2
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-1-2-3-4-3-2" type="checkbox" id="nav-1-2-3-4-3-2">
+    
+    <label class="md-nav__link" for="nav-1-2-3-4-3-2">
+      Repair Phase
+      <span class="md-nav__icon md-icon">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M8.59 16.58L13.17 12 8.59 7.41 10 6l6 6-6 6-1.41-1.42z"/></svg>
+      </span>
+    </label>
+    <nav class="md-nav" aria-label="Repair Phase" data-md-level="6">
+      <label class="md-nav__title" for="nav-1-2-3-4-3-2">
+        <span class="md-nav__icon md-icon">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+        </span>
+        Repair Phase
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../remove/" title="Disconnection V2" class="md-nav__link">
+      Disconnection V2
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../lower_arm_V2/" title="Lower Arm V2" class="md-nav__link">
+      Lower Arm V2
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../wrist_hand_cabling_V2/" title="Wrist & Hand Cabling V2" class="md-nav__link">
+      Wrist & Hand Cabling V2
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../waist_legs/" title="Waist, Leg and Ankle" class="md-nav__link">
+      Waist, Leg and Ankle
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-1-2-4" type="checkbox" id="nav-1-2-4">
+    
+    <label class="md-nav__link" for="nav-1-2-4">
+      The iCub Upgrade Kits
+      <span class="md-nav__icon md-icon">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M8.59 16.58L13.17 12 8.59 7.41 10 6l6 6-6 6-1.41-1.42z"/></svg>
+      </span>
+    </label>
+    <nav class="md-nav" aria-label="The iCub Upgrade Kits" data-md-level="3">
+      <label class="md-nav__title" for="nav-1-2-4">
+        <span class="md-nav__icon md-icon">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+        </span>
+        The iCub Upgrade Kits
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../upgrade_kits/" title="Summary" class="md-nav__link">
+      Summary
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../upgrade_kits/torso_capacitors/support/" title="KIT_002 Update of torso capacitors" class="md-nav__link">
+      KIT_002 Update of torso capacitors
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../upgrade_kits/hands/support/" title="KIT_003 Hands Support" class="md-nav__link">
+      KIT_003 Hands Support
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../upgrade_kits/upperarm_cover_icub2_5/support/" title="KIT_004 Update upper arm covers" class="md-nav__link">
+      KIT_004 Update upper arm covers
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../upgrade_kits/eyes/support/" title="KIT_005 Eyes Motor Replacement Support" class="md-nav__link">
+      KIT_005 Eyes Motor Replacement Support
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../upgrade_kits/differential_neck_pulley/support/" title="KIT_006 Update of differential neck pulley" class="md-nav__link">
+      KIT_006 Update of differential neck pulley
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="toc">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+      </span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#1-mechanical-assembly-of-the-2-tendons" class="md-nav__link">
+    1    Mechanical assembly of the 2 tendons:
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2-mounting-procedure" class="md-nav__link">
+    2    Mounting Procedure
+  </a>
+  
+    <nav class="md-nav" aria-label="2    Mounting Procedure">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#21-block-version-identification" class="md-nav__link">
+    2.1 Block version identification
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#22-rules-of-thumb-rot-for-a-perfect-start" class="md-nav__link">
+    2.2 Rules of Thumb (RoT) for a Perfect START:
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#23-route-cable-a" class="md-nav__link">
+    2.3 Route Cable ”A”
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#24-route-cable-b" class="md-nav__link">
+    2.4 Route Cable “B”
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#25-final-tensioning" class="md-nav__link">
+    2.5 Final Tensioning
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          <div class="md-content">
+            <article class="md-content__inner md-typeset">
+              
+                
+                  <a href="https://github.com/icub-tech-iit/documentation/edit/master/docs/icub_tendons/neck.md" title="Edit this page" class="md-content__button md-icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20.71 7.04c.39-.39.39-1.04 0-1.41l-2.34-2.34c-.37-.39-1.02-.39-1.41 0l-1.84 1.83 3.75 3.75M3 17.25V21h3.75L17.81 9.93l-3.75-3.75L3 17.25z"/></svg>
+                  </a>
+                
+                
+                  
+                
+                
+                <h1 id="neck-v2">NECK V2<a class="headerlink" href="#neck-v2" title="Permanent link">&para;</a></h1>
+<p>Here is the table showing the visual differences in between the First version of the iCub neck and the updated version 2 neck (NECK V2)</p>
+<table>
+<thead>
+<tr>
+<th align="center"><center> Neck V1 - First 2 DOFs </center></th>
+<th align="center"><center> Neck V2 - First 2 DOFs </center></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="center"><img src ="../img/neck/neck_V1.png" height = 300px></td>
+<td align="center"><img src ="../img/neck/neck_V2.png" height = 300px></td>
+</tr>
+</tbody>
+</table>
+<p>The second release of the neck has 2 tendons and two differential joints to actuate the first 2 DoFs of the neck compared to the 2 serial joints of the previous version of the neck (V1).</p>
+<p><strong>It makes it more robust, powerful and reliable.</strong></p>
+<h2 id="1-mechanical-assembly-of-the-2-tendons">1    Mechanical assembly of the 2 tendons:<a class="headerlink" href="#1-mechanical-assembly-of-the-2-tendons" title="Permanent link">&para;</a></h2>
+<div class="admonition note">
+<p class="admonition-title">Fast Forward</p>
+<p>If you already have a spare tendon from your maintenance kit please jump to <a href="#2-mounting-procedure">2</a></p>
+</div>
+<p>Prepare 2 cables with the components and specifics described below: </p>
+<table>
+<thead>
+<tr>
+<th>IITCODE</th>
+<th>Alias</th>
+<th>Descption</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1001</td>
+<td>U0778110</td>
+<td>Stainless steel microcable, cable construction 7x7mm - (Coated ext 1.0 mm / core 0.81 mm) - CARL STAHL GMBH</td>
+</tr>
+<tr>
+<td>2714</td>
+<td>RC_IIT_010_P_064</td>
+<td>D ext/int = 2.4 mm/0.85 mm - length 3.5 mm -- material X5CrNiMo1712-AIS1316</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Head CABLE “A”</strong>: IITCODE: 5965 -- Alias: RC_IIT_019_G_018.</p>
+<p><img alt="testa icubV2" src="../img/neck/ICUB_HEAD_Cable_A.png" />                                                                                           </p>
+<p><strong>Head CABLE “B”</strong>: IITCODE: 5964 -- Alias : RC_IIT_019_G_017.</p>
+<p><img alt="testa icubV2" src="../img/neck/ICUB_HEAD_Cable_B.png" />                </p>
+<p>Note that the “X” marks in the picture above is the area where the Teflon coating needs to be peeled off.</p>
+<p><strong>All dimensions are in mm</strong>.</p>
+<h2 id="2-mounting-procedure">2    Mounting Procedure<a class="headerlink" href="#2-mounting-procedure" title="Permanent link">&para;</a></h2>
+<h3 id="21-block-version-identification">2.1 Block version identification<a class="headerlink" href="#21-block-version-identification" title="Permanent link">&para;</a></h3>
+<table>
+<thead>
+<tr>
+<th align="center">Where yields the difference</th>
+<th align="center">Cable Block 1</th>
+<th align="center">Cable Block 2</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="center"><img src ="../img/neck/NECK_V2_block.jpg" width = 300px></td>
+<td align="center"><img src ="../img/neck/NECK_V2_BlockV1.png" width = 300px></td>
+<td align="center"><img src ="../img/neck/NECK_V2_BlockV2.png" width = 300px></td>
+</tr>
+<tr>
+<td align="center"><strong>Tightening System</strong></td>
+<td align="center">2 nut screws M2.5x2.5 + Plate</td>
+<td align="center">2 screws M2x3</td>
+</tr>
+</tbody>
+</table>
+<h3 id="22-rules-of-thumb-rot-for-a-perfect-start">2.2 Rules of Thumb (RoT) for a Perfect START:<a class="headerlink" href="#22-rules-of-thumb-rot-for-a-perfect-start" title="Permanent link">&para;</a></h3>
+<p><strong>Blocking</strong></p>
+<blockquote>
+<p>Always block the cable in the peeled off Teflon section.</p>
+</blockquote>
+<p><strong>Positioning</strong></p>
+<blockquote>
+<p>The longest part of the cable should be facing toward the front of the robot and vice-versa the shortest part should be pointing toward the rear of the robot.</p>
+</blockquote>
+<p><strong>Releasing</strong></p>
+<blockquote>
+<p>Make sure that all tensioners are fully opened.</p>
+</blockquote>
+<div class="admonition tip">
+<p class="admonition-title">Tip</p>
+<p>To block the cable with Cable Block 1 do the following:</p>
+<p>1- Insert the little plate by the front of the neck and push it with any little tool in order to put it in the middle of the throat</p>
+<p>2- Make sure the nut screws are already placed in their hole for one turn in their thread.</p>
+<p>3- Use a magnet to lift it up in the excavation in the middle of the throat. (see picture below).In this way the throat is free to receive the cable.</p>
+<p>4- Insert the cable and use the 2 nut screws (M2.5x2.5) to press the metallic plate above the cable.</p>
+<p>5- Check that the cable firmly remains in position even if pulling the cable out.</p>
+</div>
+<p><img alt="plate_trick" src="../img/neck/magnet_plate.png" /></p>
+<h3 id="23-route-cable-a">2.3 Route Cable ”A”<a class="headerlink" href="#23-route-cable-a" title="Permanent link">&para;</a></h3>
+<p><img alt="testa icubV2" src="../img/neck/ICUB_HEAD_Wiring_front_rear_view.png" /></p>
+<blockquote>
+<p>Start with the longest part of the cable which rolls around the main pulley and turn around the pulley (2) to finally rolls around pulley (3). Use pulley <strong>Y</strong> to both tense and give more slack to the cable to put the crimp the head of the crimp into the lower tensioner. once tense on side of the cable simply turn around pulley (1) the other side of the cable for a ¾ turn and finally insert the crimp onto the lower tensioner of the pulley (4). </p>
+</blockquote>
+<!--
+
+Iniziare dalla parte del cavo più lungo,   fargli fare un ¾ di giro attorno alla puleggia (1) e poi girare attorno alla   puleggia (2) per poi finire sulla puleggia (3) fino ad agganciare il crimp   all’interno del tensionner. Usare la puleggia **Y** per poter recuperare più cavo   per continuare l’altro lato del cavo.   L’altra parte del cavo e’ tutto   sommato facile da posizionare, semplicemente fare ¾ giro della pullegia (1)   e agganciare il crimp dentro il tensionner della puleggia (4).
+-->
+
+<h3 id="24-route-cable-b">2.4 Route Cable “B”<a class="headerlink" href="#24-route-cable-b" title="Permanent link">&para;</a></h3>
+<p><img alt="ICUB_HEAD_Wiring_B" src="../img/neck/ICUB_HEAD_Wiring_B.png" /></p>
+<blockquote>
+<p>Follow the diagram   above to rewire cable B in the same way as cable A but using the pulley <strong>X</strong>.</p>
+</blockquote>
+<!-- Eseguire   nello stesso modo le instruzioni del cavo “A” ma rispettando I disegni qui sopra, puleggia X-->
+
+<h3 id="25-final-tensioning">2.5 Final Tensioning<a class="headerlink" href="#25-final-tensioning" title="Permanent link">&para;</a></h3>
+<p><img alt="ICUB_HEAD_wiring_tension" src="../img/neck/ICUB_HEAD_wiring_tension.png" />                                  </p>
+<blockquote>
+<p>Adjust the tension of both cables with the 4 tensioners. 1 and 2 for <strong>Cable A</strong>,    3 and 4 for <strong>Cable B</strong></p>
+</blockquote>
+<!-- Per finire bisogna soltanto tirare i 4 tensionatori.   1   e 2 per **Cable A** , 3 e 4 per **Cable B** -->
+                
+              
+              
+                
+
+
+              
+            </article>
+          </div>
+        </div>
+      </main>
+      
+        
+<footer class="md-footer">
+  
+    <div class="md-footer-nav">
+      <nav class="md-footer-nav__inner md-grid" aria-label="Footer">
+        
+          <a href="../" title="Summary" class="md-footer-nav__link md-footer-nav__link--prev" rel="prev">
+            <div class="md-footer-nav__button md-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+            </div>
+            <div class="md-footer-nav__title">
+              <div class="md-ellipsis">
+                <span class="md-footer-nav__direction">
+                  Previous
+                </span>
+                Summary
+              </div>
+            </div>
+          </a>
+        
+        
+          <a href="../shoulder_elbow/" title="Shoulder and Elbow" class="md-footer-nav__link md-footer-nav__link--next" rel="next">
+            <div class="md-footer-nav__title">
+              <div class="md-ellipsis">
+                <span class="md-footer-nav__direction">
+                  Next
+                </span>
+                Shoulder and Elbow
+              </div>
+            </div>
+            <div class="md-footer-nav__button md-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11H4z"/></svg>
+            </div>
+          </a>
+        
+      </nav>
+    </div>
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-footer-copyright">
+        
+          <div class="md-footer-copyright__highlight">
+            BSD 3-Clause License
+          </div>
+        
+        Made with
+        <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+          Material for MkDocs
+        </a>
+      </div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    
+      <script src="../../assets/javascripts/vendor.92ffa368.min.js"></script>
+      <script src="../../assets/javascripts/bundle.5123e3d4.min.js"></script><script id="__lang" type="application/json">{"clipboard.copy": "Copy to clipboard", "clipboard.copied": "Copied to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.result.placeholder": "Type to start searching", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents"}</script>
+      
+      <script>
+        app = initialize({
+          base: "../..",
+          features: ["tabs"],
+          search: Object.assign({
+            worker: "../../assets/javascripts/worker/search.a68abb33.min.js"
+          }, typeof search !== "undefined" && search)
+        })
+      </script>
+      
+    
+  </body>
+</html>
